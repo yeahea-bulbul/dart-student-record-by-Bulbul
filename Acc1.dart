@@ -30,7 +30,7 @@ void main() {
 
     students.add({'id': id, 'name': name, 'score': score, 'grade': grade});
 
-    print("✅ Student added successfully!\n");
+    print("Student added successfully!\n");
   }
 
   // Display results
@@ -42,7 +42,7 @@ void main() {
   // Sort students by score (descending)
   students.sort((a, b) => b['score'].compareTo(a['score']));
 
-  print("\n=== Sorted Student List (by Score - Descending) ===");
+  print("\n** Sorted Student List **");
   for (var student in students) {
     print(
       "ID: ${student['id']}, Name: ${student['name']}, Score: ${student['score']}, Grade: ${student['grade']}",
@@ -73,3 +73,4 @@ String getGrade(double score) {
   else
     return "F";
 }
+
